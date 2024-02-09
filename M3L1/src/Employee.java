@@ -16,7 +16,9 @@ public class Employee {
 
     //Method
     public void printEmployeeInfo(){
-        void none;
+        System.out.println(fName + lName +":");
+        System.out.printf("EID: ");
+        System.out.println(employeeAddress.getAddress());
     }
     // Get/Set
 
