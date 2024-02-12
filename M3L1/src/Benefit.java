@@ -23,11 +23,12 @@ public class Benefit {
         this.provider = tBen.getProvider();
     }
     //Methods
-    
+
     public void printInfo(){
-        System.out.printf("Provider: %s", provider);
-        System.out.printf("Type: %s", type);
-        System.out.printf("Cost: $%f.2", cost);
+        System.out.println("\nBenefit\n-------------------");
+        System.out.printf("Provider: %s\n", provider);
+        System.out.printf("Type: %s\n", type);
+        System.out.printf("Cost: $%.2f", cost);
     }
 
     //Get/Set

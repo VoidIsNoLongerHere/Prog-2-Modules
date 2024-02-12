@@ -30,8 +30,9 @@ public class Address {
     }
 
     //Methods
-    public String getAddress(){
-        return street +", \n" + city + ", " + state +", \n" + zip;
+    public void printAddress(){
+        System.out.println("Address\n-------------------");
+        System.out.println(street +", \n" + city + ", " + state +", \n" + zip);
     }
     //Get/Set
 
