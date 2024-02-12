@@ -10,6 +10,12 @@ public class University {
         this.location = location;
         this.professor = professor;
     }
+    //Functions
+    public void print(int indent){
+        System.out.println("University Name: " + name);
+        System.out.println("└── Location: "+location);
+        professor.print(indent);
+    }
 
     // Get/Set
 

@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         // Init
+        final int INDENT = 1;
         IOSimplfier i = new IOSimplfier(); // I did make this, essentially is just input func from python and uses scanner as the base
 
         // Create all the classes with input from user
@@ -20,8 +21,10 @@ public class Main {
                 professor // Professor Class
         );
 
+        // print details
+        university.print(INDENT);
 
-        
+
 
     }
 }
