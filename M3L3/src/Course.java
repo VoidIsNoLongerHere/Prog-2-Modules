@@ -9,7 +9,7 @@ public class Course {
     }
     //method
     public void print(String tabs){
-        // The input type changes for formatting here
+        // The passed variable type changes to a string to make it easier to
 
         System.out.println(tabs+"    └── Course:");
         tabs = tabs + "\t";
@@ -17,11 +17,6 @@ public class Course {
         System.out.println(tabs+"    └── Code: "+code);
     }
 
-    public void print(){
-        System.out.println("Course");
-        System.out.println("\t"+"Course name: "+name);
-        System.out.println("\t"+"Course code: "+code);
-    }
 
     // Get/Set
 
