@@ -26,9 +26,9 @@ public class IOSimplfier {
         System.out.print(prompt);
         return s.nextLine();
     }
-    public int inInt(String prompt){
+    public Integer inInt(String prompt){
         System.out.print(prompt);
-        return s.nextInt();
+        return Integer.parseInt(s.nextLine());
     }
     public float inFloat(String prompt){
         System.out.print(prompt);

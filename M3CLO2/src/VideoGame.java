@@ -6,16 +6,18 @@ public class VideoGame {
 
     //Constructor
     public VideoGame(String gameName, String genre, Character mainCharacter) {
+        IOSimplfier i = new IOSimplfier();
         this.gameName = gameName;
         this.genre = genre;
         this.mainCharacter = mainCharacter;
+
     }
     //Method
     public void print(String tabs){
         System.out.println(gameName + ": ");
         System.out.println(tabs + "Genre: "+genre);
+        mainCharacter.print(tabs);
 
-        tabs += "\n"; // For next details
     }
 
     // Get/Set

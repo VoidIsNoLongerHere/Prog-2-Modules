@@ -14,7 +14,7 @@ public class Character {
     //Methods
     public void print(String tabs){
         System.out.println(tabs+"Character:");
-        tabs += "\n"; // Add indent for rest of the details
+        tabs += "\t"; // Add indent for rest of the details
 
         System.out.println(tabs+ "Name: " + name);
         System.out.println(tabs+ "Type: " + type);

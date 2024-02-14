@@ -13,7 +13,7 @@ public class GameStudio {
     //Methods
     public void print(){
         //Top Level No Indent
-        String tabs = "\n";
+        String tabs = "\t";
         System.out.println("Studio Name: " + studioName);
         System.out.println("Location: " + location);
         System.out.println("Games: \n------------");
