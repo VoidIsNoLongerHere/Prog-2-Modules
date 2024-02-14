@@ -8,5 +8,5 @@ This is a repo to help anyone who needs help with the ITSE-2457 modules
 
 
 ## Contributors:
-- Landon Norman
-    - If you'd like to contribute dm on on the discord server 
+- VoidIsNoLongerHere
+
