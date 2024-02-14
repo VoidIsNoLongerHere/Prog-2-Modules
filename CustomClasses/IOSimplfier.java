@@ -20,7 +20,7 @@ import java.util.Scanner;
 * Major changes not needed as its just that
 */
 public class IOSimplfier {
-    Scanner s = new Scanner(System.in);
+    private Scanner s = new Scanner(System.in);
     
     public String inStr(String prompt){
         System.out.print(prompt);
@@ -30,16 +30,16 @@ public class IOSimplfier {
         System.out.print(prompt);
         return Integer.parseInt(s.nextLine());
     }
-    public float inFloat(String prompt){
+    public Float inFloat(String prompt){
         System.out.print(prompt);
-        return s.nextFloat();
+        return Float.parseFloat(s.nextLine());
     }
-    public double inDouble(String prompt){
+    public Double inDouble(String prompt){
         System.out.print(prompt);
-        return s.nextDouble();
+        return Double.parseDouble(s.nextLine());
     }
-    public long inLong(String prompt){
+    public Long inLong(String prompt){
         System.out.print(prompt);
-        return s.nextLong();
+        return Long.parseLong(s.nextLine());
     }
 }
