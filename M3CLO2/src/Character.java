@@ -1,17 +1,25 @@
 public class Character {
     //Var
     private String name, type;
-    private int hitPoints;
+    private Integer hitPoints;
 
     //Constructor
 
 
-    public Character(String name, String type, int hitPoints) {
+    public Character(String name, String type, Integer hitPoints) {
         this.name = name;
         this.type = type;
         this.hitPoints = hitPoints;
     }
+    //Methods
+    public void print(String tabs){
+        System.out.println(tabs+"Character:");
+        tabs += "\n"; // Add indent for rest of the details
 
+        System.out.println(tabs+ "Name: " + name);
+        System.out.println(tabs+ "Type: " + type);
+        System.out.println(tabs + "HP: " + hitPoints.toString());
+    }
     // Get/Set
     public String getName() {
         return name;
