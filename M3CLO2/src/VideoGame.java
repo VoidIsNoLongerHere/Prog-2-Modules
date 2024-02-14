@@ -10,6 +10,13 @@ public class VideoGame {
         this.genre = genre;
         this.mainCharacter = mainCharacter;
     }
+    //Method
+    public void print(String tabs){
+        System.out.println(gameName + ": ");
+        System.out.println(tabs + "Genre: "+genre);
+
+        tabs += "\n"; // For next details
+    }
 
     // Get/Set
 
