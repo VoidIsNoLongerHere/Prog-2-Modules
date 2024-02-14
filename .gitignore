@@ -1,4 +1,10 @@
 *
 !*/
+
+!.gitignore
 !*.java
+
+*/.idea/
+*/.gitignore
+
 
