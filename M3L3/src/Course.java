@@ -12,7 +12,7 @@ public class Course {
         // The passed variable type changes to a string to make it easier to
 
         System.out.println(tabs+"    └── Course:");
-        tabs = tabs + "\t";
+        tabs += "\t";
         System.out.println(tabs+"    ├── Name: "+name);
         System.out.println(tabs+"    └── Code: "+code);
     }

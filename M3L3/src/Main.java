@@ -1,3 +1,8 @@
+// Landon Norman
+// Module 3 Lab 3
+// 2/13/2024
+// Purpose: Many classes, lots of data, encapsulation, basic io though
+
 public class Main {
     public static void main(String[] args) {
         // Init
