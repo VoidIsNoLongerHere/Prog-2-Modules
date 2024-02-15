@@ -15,9 +15,7 @@ import java.util.Scanner;
     * This entire class is equal to
     *
     * System.out.print(prompt);
-      return s.nextLine();
-
-    * Major changes not needed as its just that
+    * return s.nextLine();
     */
     public class InStatic{
 
