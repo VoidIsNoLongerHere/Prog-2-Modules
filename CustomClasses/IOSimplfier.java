@@ -1,4 +1,9 @@
 /*
+* *******DEPRECEATED**********
+*/
+
+
+/*
  * This is a custom class written by:
  * Landon Norman
  *
@@ -16,9 +21,8 @@ import java.util.Scanner;
 *
 * System.out.print(prompt);
   return s.nextLine();
-
-* Major changes not needed as its just that
 */
+
 public class IOSimplfier {
     private Scanner s = new Scanner(System.in);
     
