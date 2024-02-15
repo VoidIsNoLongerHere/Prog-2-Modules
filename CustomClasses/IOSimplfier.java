@@ -11,18 +11,14 @@
  * You are NOT allowed to claim this code as your own unless there is a substantial change or written permission from the author
  *
  * This comment, github commits, and other snippets of code will be used as evidence in the case of academic dishonesty
+ *
+ * This entire class is equal to
+ *
+ * System.out.print(prompt);
+ * return s.nextLine();
  */
 
 import java.util.Scanner;
-
-
-/*
-* This entire class is equal to
-*
-* System.out.print(prompt);
-  return s.nextLine();
-*/
-
 public class IOSimplfier {
     private Scanner s = new Scanner(System.in);
     
