@@ -20,6 +20,7 @@ import java.util.Scanner;
 
 
 //TODO: Make this not bad, maybe by overriding Wrapper class?
+//NOTE: Wrapper classes are final
     public class InStatic{
 
         //Init
