@@ -17,6 +17,9 @@ import java.util.Scanner;
     * System.out.print(prompt);
     * return s.nextLine();
     */
+
+
+//TODO: Make this not bad, maybe by overriding Wrapper class?
     public class InStatic{
 
         //Init
@@ -27,6 +30,7 @@ import java.util.Scanner;
             System.out.print(prompt);
             return s.nextLine();
         }
+
         public static Integer inInt(String prompt){
             System.out.print(prompt);
             return Integer.parseInt(s.nextLine());
