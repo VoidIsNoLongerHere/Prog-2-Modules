@@ -14,7 +14,7 @@ import java.util.Scanner;
 //UNTESTED: I have no idea what happens if you pass a type that isnt here, so maybe dont do that
 //NOTE: So accoring to my not at all in depth research of the Serializable class. It includes only string and the numbers, so this class should be limited to those classes
 
-public class InGen<T extends Number> {
+public class InGen<T extends Serializable> {
     //NOTE: Scanner must be called outside of this class
     public static InGen<String> in(String prompt, Scanner s){
         System.out.print(prompt);
