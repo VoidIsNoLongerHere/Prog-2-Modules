@@ -10,9 +10,9 @@
 import java.util.Scanner;
 
 
-//NOTE: I have no idea what happens if you pass a type that isnt here, so maybe dont do that
-public class InGen<T>{
-    
+//FIXME: I have no idea what happens if you pass a type that isnt here, so maybe dont do that
+public class InGen<T> {
+
     Scanner s = new Scanner(System.in);
 
     public InGen<String> in(String prompt){
