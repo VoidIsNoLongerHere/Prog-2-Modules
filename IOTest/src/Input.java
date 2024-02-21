@@ -21,7 +21,7 @@ public class Input {
         *
         * */
 
-
+        //Prompt the user
 
         System.out.print(prompt);
 
@@ -49,7 +49,18 @@ public class Input {
             case null, default -> {
                 return response;
             }
-        }
+        }}
+    public static Object in(String prompt){
+            /*
+             * This is used in lieu of the scanner class because i hate it
+             * ARG 1 = String : Prompt to the cli
+             */
+
+            //Prompt the user
+            System.out.print(prompt);
+            Scanner s = new Scanner(System.in);
+            return s.nextLine();
+
     }
 
 
