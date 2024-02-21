@@ -15,7 +15,7 @@ public class Input {
 
     public static Object in(String prompt, String type){
         /*
-        * This is used in lieu of the scanner class because i hate it
+        * This is used in lieu of the scanner class because I hate it
         * ARG 1 = String : Prompt to the cli
         * ARG 2 = String : Type to be read from cli:
         *
@@ -30,6 +30,7 @@ public class Input {
         String response = s.nextLine();
         s = null;
 
+        //Identify Type then return it
         switch (type) {
             case "i", "int", "integer" ->{
                 return Integer.parseInt(response);
@@ -49,15 +50,18 @@ public class Input {
             case null, default -> {
                 return response;
             }
+
         }}
-    public static Object in(String prompt){
+    public static String in(String prompt){
             /*
-             * This is used in lieu of the scanner class because i hate it
+             * This is used in lieu of the scanner class because I hate it
              * ARG 1 = String : Prompt to the cli
              */
 
             //Prompt the user
             System.out.print(prompt);
+
+            //Get and return input
             Scanner s = new Scanner(System.in);
             return s.nextLine();
 
