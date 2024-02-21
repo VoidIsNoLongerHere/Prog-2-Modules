@@ -14,6 +14,15 @@ import java.util.Scanner;
 public class Input {
 
     public static Object in(String prompt, String type){
+        /*
+        * This is used in lieu of the scanner class because i hate it
+        * ARG 1 = String : Prompt to the cli
+        * ARG 2 = String : Type to be read from cli:
+        *
+        * */
+
+
+
         System.out.print(prompt);
 
         type = type.toLowerCase();
