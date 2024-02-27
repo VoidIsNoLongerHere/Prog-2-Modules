@@ -1,3 +1,5 @@
+
+
 public class Car {
     String make;
     String model;
@@ -9,5 +11,9 @@ public class Car {
         this.model = model;
         this.year = year;
         this.price = price;
+    }
+
+    public Car() {
+
     }
 }
