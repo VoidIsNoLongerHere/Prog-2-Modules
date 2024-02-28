@@ -1,22 +1,14 @@
+import com.sun.jdi.InvalidTypeException;
+
 public class Main {
-    public static void main(String[] args) {
-
-        Branch test1 = new testChild();
-        Branch test2 = new testChild();
-
-        Branch mid1 = new midChild();
-        mid1.addChild(test1);
-        mid1.addChild(test2);
-
-        Branch mid2 = new midChild();
-        mid2.addChild(test1);
-        mid2.addChild(test2);
+    public static void main(String[] args) throws InvalidTypeException {
+        System.out.println(InGen.in("Enter a string: ", String.class) instanceof String);
+        System.out.println(InGen.in("Enter a Integer: ", Integer.class) instanceof Integer);
+        System.out.println(InGen.in("Enter a Float: ", Float.class) instanceof Float);
+        System.out.println(InGen.in("Enter a Double: ", Double.class) instanceof Double);
+        System.out.println(InGen.in("Enter a Boolean: ", Boolean.class) instanceof Boolean);
 
 
-        Branch test = new TestData();
-        test.addChild(mid1);
-        test.addChild(mid2);
-        test.printData(0);
 
     }
 }
