@@ -12,7 +12,7 @@ import com.sun.jdi.InvalidTypeException;
 import java.util.Scanner;
 
 public class InGen<T> {
-    public static<T> T in(String prompt, Class<T> type ) throws InvalidTypeException {
+    public static<T> T in(String prompt, Class<T> type ) throws Exception, InvalidTypeException {
         /*
          * This is used in lieu of the scanner class because I hate it
          * ARG 1 = String : Prompt to the cli
@@ -28,25 +28,35 @@ public class InGen<T> {
         Scanner s = new Scanner(System.in);
         String response = s.nextLine();
         s = null;
+        T value = null;
 
         //Identify Type then return it
+        try {
+            if (type == Integer.class) {
+                value = (T) Integer.valueOf(response);
+            } else if (type == Long.class) {
+                value = (T) Long.valueOf(response);
+            } else if (type == Float.class) {
+                value = (T) Float.valueOf(response);
+            } else if (type == Double.class) {
+                value = (T) Double.valueOf(response);
+            } else if (type == Boolean.class) {
+                value = (T) Boolean.valueOf(response);
+            } else if (type == String.class) {
+                value = (T) response;
+            } else {
+                throw new InvalidTypeException();
+            }
+            return value;
+        } catch (NumberFormatException e){
+            value = in(prompt, type);
+        } catch (InvalidTypeException e){
+            System.out.println("Invalid type argument!");
+            System.out.println(e);
+            throw new Exception();
 
-        if (type == Integer.class){
-            return (T) Integer.valueOf(response);
-        } else if (type == Long.class) {
-            return (T) Long.valueOf(response);
-        } else if (type == Float.class) {
-            return (T) Float.valueOf(response);
-        } else if (type == Double.class) {
-            return (T) Double.valueOf(response);
-        } else if (type == Boolean.class) {
-            return (T) Boolean.valueOf(response);
-        } else if (type == String.class){
-           return (T) response;
-        } else {
-            throw new InvalidTypeException();
         }
-
+        return null;
 
 
     }
