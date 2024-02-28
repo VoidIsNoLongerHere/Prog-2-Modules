@@ -11,14 +11,13 @@
 import com.sun.jdi.InvalidTypeException;
 import java.util.Scanner;
 
-public class InGen<T> {
-    public static<T> T in(String prompt, Class<T> type ) throws Exception, InvalidTypeException {
+public class InGen {
+    public static<T> T in(String prompt, Class<T> type ) throws Exception{
         /*
          * This is used in lieu of the scanner class because I hate it
          * ARG 1 = String : Prompt to the cli
-         * ARG 2 = Class<T> : Type to be cast to from cli:
-         *
-         * */
+         * ARG 2 = Class<T> : Type to return, takes wrapper classes (i.e. String.class, Integer.class):
+         */
 
         //Prompt the user
 
@@ -28,7 +27,9 @@ public class InGen<T> {
         Scanner s = new Scanner(System.in);
         String response = s.nextLine();
         s = null;
-        T value = null;
+        T value;
+
+        System.gc();
 
         //Identify Type then return it
         try {
@@ -45,18 +46,18 @@ public class InGen<T> {
             } else if (type == String.class) {
                 value = (T) response;
             } else {
-                throw new InvalidTypeException();
+                throw new IllegalArgumentException("Code Error!!, invalid type passed as parameter");
             }
-            return value;
-        } catch (NumberFormatException e){
+
+            return value; // Catch-all return statement
+
+        } catch (NumberFormatException e) {
+
+            System.out.println("Invalid Input");
             value = in(prompt, type);
-        } catch (InvalidTypeException e){
-            System.out.println("Invalid type argument!");
-            System.out.println(e);
-            throw new Exception();
+            return value;
 
         }
-        return null;
 
 
     }
