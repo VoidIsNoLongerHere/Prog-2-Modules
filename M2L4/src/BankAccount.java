@@ -9,16 +9,16 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 public class BankAccount {
     //init
-    Random r = new Random();
-    NumberFormat d = NumberFormat.getCurrencyInstance();
-    Scanner s = new Scanner(System.in);
+    private final Random r = new Random();
+    private final NumberFormat d = NumberFormat.getCurrencyInstance();
+    private final Scanner s = new Scanner(System.in);
 
 
     //var
-    int accountNum;
-    String name, type;
-    String transactions;
-    double balance;
+    private int accountNum;
+    private String name, type;
+    private String transactions;
+    private double balance;
 
     //Constructor
     public BankAccount(String name, String type, double balance) {

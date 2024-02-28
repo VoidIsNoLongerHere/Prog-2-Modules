@@ -6,10 +6,10 @@ import java.text.NumberFormat;
 public class House {
 
     // vars
-    String address;
-    int sqFeet, numBed;
-    double numBath, price;
-    NumberFormat d = NumberFormat.getCurrencyInstance();
+    private String address;
+    private int sqFeet, numBed;
+    private double numBath, price;
+    private final NumberFormat d = NumberFormat.getCurrencyInstance();
 
     //constructors
     public House(String address, int sqFeet, int numBed, double numBath, double price) {

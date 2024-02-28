@@ -3,10 +3,10 @@ import java.text.NumberFormat;
 
 public class Sport {
 //init
-    int wins;
-    int losses;
-    String name;
-    int players;
+    private int wins;
+    private int losses;
+    private String name;
+    private int players;
 
 //constructor
     public Sport(){

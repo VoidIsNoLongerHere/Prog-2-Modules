@@ -1,8 +1,8 @@
 public class Car {
-    String brand;
-    String model;
-    int year;
-    double mileage;
+    private String brand;
+    private String model;
+    private int year;
+    private double mileage;
 
 
     public Car(){
