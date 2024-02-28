@@ -8,9 +8,13 @@
  * This comment, github commits, and other snippets of code will be used as evidence in the case of academic dishonesty
  */
 
+//THIS CLASS IS NOW DEPRICATED. USE InGen generic instead!!!
+
+
 import java.util.Objects;
 import java.util.Scanner;
 
+@Deprecated
 public class Input {
 
     public static Object in(String prompt, String type){
