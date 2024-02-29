@@ -12,7 +12,7 @@ public class CargoShip extends Ship{
     @Override
     public String toString() {
         return "CargoShip{" +
-                "weight=" + weight +
+                "weight=" + weight + " tons" +
                 ", name='" + super.getName() + "'" +
                 ", year=" + super.getYear() +
                 '}';
