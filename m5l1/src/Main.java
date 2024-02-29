@@ -1,3 +1,7 @@
+// Landon Norman
+// Module 5 Lab 1
+// 2/29/2024
+// Purpose: Extend classes and cargoships man
 public class Main {
     public static void main(String[] args){
         Ship cargo = new CargoShip(
