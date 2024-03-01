@@ -13,11 +13,11 @@ import java.util.Scanner;
 
 public class InGen {
     public static<T> T in(String prompt, Class<T> type ) throws Exception{
-        /*
+        /**
          * This is used in lieu of the scanner class because I hate it
          * ARG 1 = String : Prompt to the cli
          * ARG 2 = Class<T> : Type to return, takes wrapper classes (i.e. String.class, Integer.class):
-         */
+         **/
 
         //Prompt the user
 
