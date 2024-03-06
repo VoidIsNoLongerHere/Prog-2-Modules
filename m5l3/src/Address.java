@@ -31,7 +31,7 @@ public class Address implements Leaflet {
 
     //Methods
     public void printSelf(int depth){
-        System.out.println(tabs(depth)+"Address: ");
+        System.out.println(tabs(depth++)+"Address: ");
         System.out.println(tabs(depth)+street +",");
         System.out.println(tabs(depth)+city + ", " + state +",");
         System.out.println(tabs(depth)+zip);
