@@ -13,7 +13,11 @@ public abstract class MedicalProvider {
         this.office = office;
     }
     //Methods
-    public abstract void printInfo();
+    public void printInfo(){
+        System.out.println(firstName + " " + lastName +":");
+        System.out.printf("Employee ID: %s\n", employeeID);
+        office.printInfo();
+    }
 
 
 }

@@ -31,7 +31,7 @@ public class OfficeLocation {
     //Method
     public void printInfo(){
         System.out.printf("Office name: %s\n", officeName);
-        System.out.printf("Phone number: %s", phone);
+        System.out.printf("Phone number: %s\n", phone);
         System.out.printf("Address: %s\n", address);
         System.out.printf("         %s", city);
         System.out.printf(", %s\n", state);

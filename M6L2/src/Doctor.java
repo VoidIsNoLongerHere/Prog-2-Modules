@@ -1,13 +1,15 @@
+import java.text.NumberFormat;
+
 public class Doctor extends MedicalProvider{
 
     //Var
     private String specialty;
     private String licenceNumber;
     private String roomNum;
-    private String salary;
+    private Double salary;
 
     //Constructor
-    public Doctor(String firstName, String lastName, String employeeID, OfficeLocation office, String specialty, String licenceNumber, String roomNum, String salary) {
+    public Doctor(String firstName, String lastName, String employeeID, OfficeLocation office, String specialty, String licenceNumber, String roomNum, Double salary) {
         super(firstName, lastName, employeeID, office);
         this.specialty = specialty;
         this.licenceNumber = licenceNumber;
@@ -17,9 +19,14 @@ public class Doctor extends MedicalProvider{
     public Doctor() {}
 
     //Methods
-    @Override
+
     public void printInfo() {
-        
+        NumberFormat c = NumberFormat.getCurrencyInstance();
+        super.printInfo();
+        System.out.printf("Specialty: %s\n", specialty);
+        System.out.printf("License Number: %s\n", licenceNumber);
+        System.out.printf("Room Number: %s\n", roomNum);
+        System.out.printf("Salary: %s\n\n", c.format(salary));
     }
     //Get/Set
     public String getSpecialty() {
@@ -46,11 +53,11 @@ public class Doctor extends MedicalProvider{
         this.roomNum = roomNum;
     }
 
-    public String getSalary() {
+    public Double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
 }
