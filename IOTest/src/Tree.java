@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Tree{
+
     ArrayList<Leaflet> roots = new ArrayList<>();
 
     public Tree(){};

@@ -21,15 +21,14 @@ public class Main {
                 }
                 case 2 -> {
                     searchLastName();
+
                     break;
                 }
                 case 3 -> {
                     searchFirstName();
                     break;
                 }
-                case 4 -> {
-                    System.exit(0);
-                }
+                case 4 -> System.exit(0);
                 default -> {
                     System.out.println("Invalid input");
                     break;
