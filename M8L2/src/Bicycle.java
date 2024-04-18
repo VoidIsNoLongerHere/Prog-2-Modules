@@ -9,4 +9,4 @@ public class Bicycle implements TravelMode{
     public Object getDirection() {
         System.out.println("Calculating direction (Bike)");
         return 2;
-}
+}}
