@@ -11,10 +11,16 @@ public class Main {
         serviceOne.getETA();
         serviceOne.getDirection();
 
-        //TODO - demonstrate the Bicycle Class - you will need to create the Bicycle class
-        // Note the Bicycle class returns 2 and implements the getETA and getDirection
 
-        //TODO - demonstrate the Drive Class - - you will need to create the Drive class
-        // Note the Drive class returns 1 and implements the getETA and getDirection
+        System.out.println("Driving:");
+        serviceOne.setTravelMode(new Drive() );
+        serviceOne.getETA();
+        serviceOne.getDirection();
+
+
+        System.out.println("Bike:");
+        serviceOne.setTravelMode(new Bicycle() );
+        serviceOne.getETA();
+        serviceOne.getDirection();
     }
 }
