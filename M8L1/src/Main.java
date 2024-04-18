@@ -6,6 +6,6 @@ public class Main {
 
         // Write report
 
-        reportFooter.printHeader();
+        reportFooter.printFooter();
     }
 }

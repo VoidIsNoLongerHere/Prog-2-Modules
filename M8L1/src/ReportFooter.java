@@ -24,8 +24,8 @@ public class ReportFooter {
         return this.header;
     }
 
-    // New printHeader method
-    public void printHeader() {
+    // New printFooter method
+    public void printFooter() {
         System.out.println(this.header);
     }
 }
