@@ -3,6 +3,7 @@ public abstract class Character {
     String name;
     Double health;
     int level;
+    Character target;
 
     //constructor
 
@@ -13,19 +14,13 @@ public abstract class Character {
         this.level = level;
     }
 
-    public Character() {
-    }
 
     //methods
-    public int attack(Character target){
-        int damage = 10;
-        int targetLevel = target.getLevel();
-        if ( targetLevel > this.level){
-            //Ifover 10 set to 0
-        }
+    public void attack(){
+        System.out.println("Character is Attacking!");
     }
-    public int defend(Character enemy){
-        int damage = enemy.attack(this);
+    public void defend(Character attacker){
+        System.out.println("Character is Defending!");
 
     }
 
@@ -53,6 +48,14 @@ public abstract class Character {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public Character getTarget() {
+        return target;
+    }
+
+    public void setTarget(Character target) {
+        this.target = target;
     }
 }
 
