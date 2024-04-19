@@ -3,9 +3,11 @@ public class Main {
         WeatherStation weatherStation = new WeatherStation();
         Observer weatherDisplay = new WeatherDisplay();
         Observer mobileApp = new MobileApp();
+        Observer weatherLogger = new WeatherLogger();
 
         weatherStation.addObserver(weatherDisplay);
         weatherStation.addObserver(mobileApp);
+        weatherStation.addObserver(weatherLogger);
 
         // Simulate temperature change
         weatherStation.setTemperature(25.0f);
