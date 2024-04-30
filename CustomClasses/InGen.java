@@ -9,16 +9,14 @@
  */
 
 import com.sun.jdi.InvalidTypeException;
+
+import java.util.Objects;
 import java.util.Scanner;
 
 public class InGen {
     private static Scanner scanner;
     private static Scanner getScanner(){
-        if (scanner != null){
-            return scanner;
-        } else{
-            return new Scanner(System.in);
-        }
+        return Objects.requireNonNullElseGet(scanner, () -> new Scanner(System.in));
     }
     /**
      *
