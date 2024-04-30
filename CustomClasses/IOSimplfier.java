@@ -19,6 +19,7 @@
  */
 
 import java.util.Scanner;
+@Deprecated
 public class IOSimplfier {
     private Scanner s = new Scanner(System.in);
     

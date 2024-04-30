@@ -19,12 +19,13 @@ import java.util.Scanner;
     */
 
 
-//TODO: Make this not bad, maybe by overriding Wrapper class?
+//TODOne: Make this not bad, maybe by overriding Wrapper class?
 //NOTE: Wrapper classes are final
+@Deprecated
     public class InStatic{
 
         //Init
-        private Scanner s = new Scanner(System.in);
+        private static final Scanner s = new Scanner(System.in);
 
 
         public static String inStr(String prompt){
@@ -50,4 +51,3 @@ import java.util.Scanner;
         }
     }
 
-}

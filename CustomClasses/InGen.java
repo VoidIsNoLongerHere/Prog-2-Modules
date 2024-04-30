@@ -12,23 +12,29 @@ import com.sun.jdi.InvalidTypeException;
 import java.util.Scanner;
 
 public class InGen {
+    private static Scanner scanner;
+    private static Scanner getScanner(){
+        if (scanner != null){
+            return scanner;
+        } else{
+            return new Scanner(System.in);
+        }
+    }
+    /**
+     *
+     * @param prompt String to print to console
+     * @param type Defines T
+     * @return T Values from user input to CLI
+     *
+     */
+
     public static<T> T in(String prompt, Class<T> type ){
-        /*
-         * This is used in lieu of the scanner class because I hate it
-         * ARG 1 = String : Prompt to the cli
-         * ARG 2 = Class<T> : Type to return, takes wrapper classes (i.e. String.class, Integer.class):
-         */
-
         //Prompt the user
-
         System.out.print(prompt);
 
+        String response = getScanner().nextLine();
 
-        Scanner s = new Scanner(System.in);
-        String response = s.nextLine();
-        s = null;
         T value;
-
         System.gc();
 
         //Identify Type then return it
